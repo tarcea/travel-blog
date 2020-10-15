@@ -1,4 +1,5 @@
 import React from 'react';
+import { CURRENT_YEAR } from '../../config';
 import './footer.css';
 
 const logo = '/images/globuzzer_logo.png';
@@ -20,7 +21,7 @@ function Footer() {
             <li>+46 73 555 5 134</li>
             <li>info@globuzzer.com</li>
             <li style={{ paddingTop: "50px" }}>
-               © 2020  Globuzzer. All rights reserved
+               © { CURRENT_YEAR }  Globuzzer. All rights reserved
             </li>
           </ul>
 
@@ -63,8 +64,7 @@ function Footer() {
 
         <nav className="footer-small-menu">
           <ul>
-            <li>Backängsvägen 24 </li>
-            <li>192 73 Sollentuna, Sweden</li>
+            <li>Skyttevägen 29, Saltsjöbaden, Sweden </li>
             <li>+46 73 555 5 134</li>
             <li>info@globuzzer.com</li>
 
@@ -76,7 +76,7 @@ function Footer() {
               <img src={pinterest} alt="pinterest" />
             </li>
 
-            <li style={{ paddingTop: "50px" }}>Globuzzer 2020</li>
+            <li style={{ paddingTop: "50px" }}>© { CURRENT_YEAR }  Globuzzer. All rights reserved</li>
           </ul>
         </nav>
       </footer>
