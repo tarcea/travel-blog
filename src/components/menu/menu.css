@@ -10,6 +10,7 @@
 .menu-container {
   display:flex;
   align-items: center;
+  position: relative;
 }
 
 .menu-logo {
@@ -22,6 +23,10 @@
   border: 1px solid rgba(136, 136, 136, 0.3);
 }
 
+.menu-links {
+  position: absolute;
+  right: 5%;
+}
 
 .menu-links li {
   font-family: Montserrat;
@@ -51,8 +56,32 @@
 
 @media screen and (max-width: 900px) {
 
+  .top-menu {
+    height: 120px;
+  }
+
   .menu-links li {
-  font-size: 10px;
+  font-size: 12px;
+
+}
+
+.menu-links {
+  margin-top: 100px;
+}
+
+.menu-container {
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.menu-logo {
+  position: relative;
+  right: 10%;
+}
+
+.menu-underline {
+  position: relative;
+  top: 35%;
 }
 
 }

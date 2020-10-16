@@ -3,14 +3,14 @@ import './App.css';
 import Footer from './components/footer/footer';
 import Menu from './components/menu/menu';
 import Banner from './components/banner/banner';
-import IconCard from './components/icon_card/icon_card';
+import ToolsMenu from './components/tools_menu/tools_menu';
 
 function App() {
   return (
     <div className="App">
       <Menu />
       <Banner />
-      <IconCard />
+      <ToolsMenu />
       <Footer />
     </div>
   );
