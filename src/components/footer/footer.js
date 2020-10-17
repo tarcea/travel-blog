@@ -1,11 +1,11 @@
 import React from 'react';
 import { CURRENT_YEAR } from '../../config';
+import logo from '../images/globuzzer_logo.png';
+import facebook from '../images/facebook_icon.png';
+import twitter from '../images/twitter.png';
+import pinterest from '../images/pinterest.png';
 import './footer.css';
 
-const logo = '/images/globuzzer_logo.png';
-const f_i = '/images/facebook_icon.png';
-const twitter = '/images/twitter.png';
-const pinterest = '/images/pinterest.png';
 
 function Footer() {
   return (
@@ -44,7 +44,7 @@ function Footer() {
             <li>FOLLOW US</li>
             <div className="follow-icons">
               <span>
-                <img src={f_i} alt="facebook" />
+                <img src={facebook} alt="facebook" />
               </span>
               <span>
                 <img src={twitter} alt="facebook" />
@@ -69,7 +69,7 @@ function Footer() {
             <li>info@globuzzer.com</li>
 
             <li>
-              <img src={f_i} alt="facebook" />
+              <img src={facebook} alt="facebook" />
 
               <img src={twitter} alt="twitter" />
 

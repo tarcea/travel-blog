@@ -1,7 +1,7 @@
 import React from 'react';
 import './menu.css';
+import logo from '../images/globuzzer_watermark.png';
 
-const logo = '/images/globuzzer_watermark.png';
 
 function Menu() {
   return (

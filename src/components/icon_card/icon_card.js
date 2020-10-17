@@ -6,8 +6,9 @@ import './icon_card.css'
 function IconCard(props) {
   return (
     <div className="card-frame">
-      <div className="card-icon">
-        <img src={props.img} alt="icon" />
+      <div className="card-icon" id={props.id}>
+        <img src={props.img} alt="" />
+
       </div>
       <div className="card-label">
         <p>{props.label}</p>
