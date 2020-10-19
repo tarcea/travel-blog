@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
   /*position: relative;*/
   /*width: 1444px;*/
-  width: 100%;
+  width: 100vw;
   height: 402.38px;
   display:table;
 }
@@ -26,5 +26,14 @@
   display:table-cell;
   vertical-align:middle;
   text-align:center;
+
+}
+
+@media screen and (max-width: 900px) {
+
+.banner-welcome {
+  /*font-size: 24px;*/
+}
+
 
 }

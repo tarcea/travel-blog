@@ -1,0 +1,29 @@
+.tools-menu {
+  margin: 16px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+
+.active {
+  border: 1px solid pink;
+  padding: 16px;
+}
+
+.tools-menu a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 900px) {
+
+.tools-menu {
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+}
