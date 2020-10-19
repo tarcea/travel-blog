@@ -18,56 +18,78 @@ function ToolsMenu() {
   // }
 
   const handleClick = (e) => {
-    console.log(e.target)
-    const elArray = document.getElementById('tools-link').getElementsByTagName("img");
+    const ids = "#setup, #subscription, #guide, #revenue, #comunity, #marketing, #content"
+    const elArray = document.querySelectorAll(ids);
+    elArray.forEach((element) => {
+      element.classList.remove("active")
+    })
+
+    const k = e.target.innerText;
+    console.log(k)
+    const z = (k === "setup" ||
+               k === "subscription" ||
+               k === "guide" ||
+               k === "revenue" ||
+               k === "comunity" ||
+               k === "marketing" ||
+               k === "content");
+    if (z) {
+        e.target.classList.add("active")
+    }
 
   }
 
   return (
-    <div className="tools-menu" id="tools-link">
-      <Link to="/setup" onClick={handleClick} id="setup"  >
+    <div className="tools-menu" id="tools-link" onClick={handleClick}>
+      <Link to="/setup" >
         <IconCard
           img={internet}
           label="Set up your travel blog"
+          id="setup"
           className="active"
+          alt="Set up your travel blog"
         />
       </Link>
-      <Link to="/subscription" onClick={handleClick} id="subscription"  >
+      <Link to="/subscription"  >
         <IconCard
           img={subscription}
           label="Set up your subscription payment plan"
-          className="active"
+          id="subscription"
         />
         </Link>
-      <Link to="/guides" onClick={handleClick} id="guide" >
+      <Link to="/guides" >
         <IconCard
           img={create}
           label="Create courses or guides"
-          className="active"
+          id="guide"
         />
       </Link>
-      <Link to="/revenue" onClick={handleClick} id="revenue" >
+      <Link to="/revenue" >
         <IconCard
           img={revenue}
           label="Revenue strategies"
+          id="revenue"
         />
       </Link>
-      <Link to="/comunity" onClick={handleClick} id="comunity" >
+      <Link to="/comunity" >
         <IconCard
           img={comunity}
           label="Comunity management"
+          id="comunity"
         />
       </Link>
-      <Link to="/marketing" onClick={handleClick} id="marketing" >
+      <Link to="/marketing" >
         <IconCard
           img={marketing}
           label="Marketing tools"
+          id="marketing"
         />
       </Link>
-      <Link to="/content" onClick={handleClick} id="content" >
+      <Link to="/content" >
         <IconCard
           img={content}
           label="Content Guidlines"
+          id="content"
         />
       </Link>
 

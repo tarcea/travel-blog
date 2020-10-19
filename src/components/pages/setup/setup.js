@@ -1,9 +1,34 @@
 import React from 'react';
+import './setup.css';
 
 function Setup() {
   return (
-    <div>
-      <p>Set up your travel blog</p>
+    <div className="main-content">
+      <div className="search-container">
+      <p>All tutorial videos</p>
+      <input type="text" />
+      </div>
+      <div className="videos-container">
+        <div className="video-item">
+          <div className="fake-video"></div>
+        </div>
+        <div className="video-item">
+          <div className="fake-video"></div>
+        </div>
+        <div className="video-item">
+          <div className="fake-video"></div>
+        </div>
+        <div className="video-item">
+          <div className="fake-video"></div>
+        </div>
+        <div className="video-item">
+          <div className="fake-video"></div>
+        </div>
+        <div className="video-item">
+          <div className="fake-video"></div>
+        </div>
+
+      </div>
     </div>
   );
 }

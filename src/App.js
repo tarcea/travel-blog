@@ -31,8 +31,6 @@ function App() {
           <Route path="/marketing" component={Marketing} />
           <Route path="/content" component={Content} />
         </Switch>
-        <Search />
-        <Video />
       <Footer />
     </div>
   );
