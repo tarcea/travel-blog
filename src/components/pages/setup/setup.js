@@ -1,5 +1,7 @@
 import React from 'react';
+import play from '../../images/playButton.png'
 import './setup.css';
+import Videos from '../../videos/videos';
 
 function Setup() {
   return (
@@ -8,27 +10,7 @@ function Setup() {
       <p>All tutorial videos</p>
       <input type="text" />
       </div>
-      <div className="videos-container">
-        <div className="video-item">
-          <div className="fake-video"></div>
-        </div>
-        <div className="video-item">
-          <div className="fake-video"></div>
-        </div>
-        <div className="video-item">
-          <div className="fake-video"></div>
-        </div>
-        <div className="video-item">
-          <div className="fake-video"></div>
-        </div>
-        <div className="video-item">
-          <div className="fake-video"></div>
-        </div>
-        <div className="video-item">
-          <div className="fake-video"></div>
-        </div>
-
-      </div>
+        <Videos />
     </div>
   );
 }

@@ -9,13 +9,10 @@
   font-weight: bold;
   font-size: 24px;
   line-height: 170%;
-  /* or 41px */
-
   display: flex;
   align-items: center;
-
   color: #555555;
-
+  margin-left: 20px;
 }
 
 .search-container {
@@ -32,45 +29,17 @@
   margin: 0 auto;
 }
 
-.videos-container {
-  margin: 25px 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  /*grid-auto-rows: minmax(408px,auto);*/
-  grid-gap: 8px;
-  /*gap: 10px;*/
-}
-
-.video-item {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-}
-
-.fake-video {
-  width: 389px;
-  height: 194px;
-  background: url("https://picsum.photos/389/194") rgba(0, 0, 0, 0.2);
-}
 
 
 @media screen and (max-width: 900px) {
   .search-container {
     flex-direction: column;
+    text-align: left;
   }
 
   .search-container input {
     width: 80%;
   }
 
-  .videos-container {
-    grid-template-columns: 1fr;
-  }
-
-  .fake-video {
-    width: 289px;
-    height: 100px;
-  }
 }
 

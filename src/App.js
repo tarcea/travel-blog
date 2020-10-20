@@ -6,7 +6,7 @@ import Menu from './components/menu/menu';
 import Banner from './components/banner/banner';
 import ToolsMenu from './components/tools_menu/tools_menu';
 import Search from './components/search/search';
-import Video from './components/video/video';
+import Videos from './components/videos/videos';
 import Setup from './components/pages/setup/setup';
 import Subscription from './components/pages/subscription/subscription';
 import Guides from './components/pages/guides/guides';
@@ -22,6 +22,7 @@ function App() {
       <Menu />
         <Banner />
         <ToolsMenu />
+
         <Switch>
           <Route path="/setup" component={Setup} />
           <Route path="/subscription" component={Subscription} />

@@ -7,7 +7,7 @@ function IconCard(props) {
   return (
     <div className="card-frame">
       <div className={"card-icon" + " " + props.className} id={props.id}>
-        <img src={props.img} alt={props.alt}  />
+        <img src={props.img} alt={props.alt} />
 
       </div>
       <div className="card-label">

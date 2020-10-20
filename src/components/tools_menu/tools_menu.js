@@ -26,7 +26,7 @@ function ToolsMenu() {
 
     const k = e.target.innerText;
     console.log(k)
-    const z = (k === "setup" ||
+    const z = (k === "Set up your travel blog" ||
                k === "subscription" ||
                k === "guide" ||
                k === "revenue" ||
@@ -46,11 +46,9 @@ function ToolsMenu() {
           img={internet}
           label="Set up your travel blog"
           id="setup"
-          className="active"
-          alt="Set up your travel blog"
         />
       </Link>
-      <Link to="/subscription"  >
+      <Link to="/subscription" label="Set up your subscription payment plan" >
         <IconCard
           img={subscription}
           label="Set up your subscription payment plan"
