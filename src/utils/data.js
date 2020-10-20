@@ -16,7 +16,7 @@ export const videoData = [
   },
   {
     id: 2,
-    title: "Content writing for Stockholm",
+    title: "Content writing for Malmo",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -26,7 +26,7 @@ export const videoData = [
   },
   {
     id: 3,
-    title: "Content writing for Stockholm",
+    title: "Content writing for Oslo",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -47,7 +47,7 @@ export const videoData = [
 
   {
     id: 5,
-    title: "Content writing for Stockholm",
+    title: "Content writing for Malmo",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -58,7 +58,7 @@ export const videoData = [
 
   {
     id: 6,
-    title: "Content writing for Stockholm",
+    title: "Content writing for Oslo",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -91,7 +91,7 @@ export const videoData = [
 
   {
     id: 9,
-    title: "Helsinki design district",
+    title: "Content writing for Stockhol",
     name: "sofia",
     likes: 15000,
     liked: false,

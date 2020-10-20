@@ -22,13 +22,12 @@ function App() {
       <Menu />
         <Banner />
         <ToolsMenu />
-
         <Switch>
           <Route path="/setup" component={Setup} />
           <Route path="/subscription" component={Subscription} />
           <Route path="/guides" component={Guides} />
           <Route path="/revenue" component={Revenue} />
-          <Route path="/comunity" component={Comunity} />
+          <Route path="/community" component={Comunity} />
           <Route path="/marketing" component={Marketing} />
           <Route path="/content" component={Content} />
         </Switch>

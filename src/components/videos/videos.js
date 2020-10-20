@@ -3,17 +3,17 @@ import play from '../images/playButton.png';
 import './videos.css';
 import { videoData } from '../../utils/data';
 
-function Videos() {
-  const [videos, setVideos] = useState(null);
+function Videos( {videos} ) {
+  //const [videos, setVideos] = useState(videoData);
 
-  useEffect(() => {
-    setTimeout( async () => {
-      // const res = await fetch('https://jsonplaceholder.typicode.com/photos');
-      // const data = await res.json();
-      setVideos(videoData);
-    }, 500)
+  // useEffect(() => {
+  //   setTimeout( async () => {
+  //     // const res = await fetch('https://jsonplaceholder.typicode.com/photos');
+  //     // const data = await res.json();
+  //     setVideos(videoData);
+  //   }, 500)
 
-  })
+  // })
 
   return (
     <div>
