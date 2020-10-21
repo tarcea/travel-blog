@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import './setup.css';
 import Videos from '../../videos/videos';
-// import PlayVideo from '../../videos/play_video';
+import PlayVideo from '../../videos/play_video';
 import { videoData } from '../../../utils/data';
 
 
@@ -11,10 +11,10 @@ function Setup() {
   const [videos] = useState(videoData);
   const [searchVideo, setSearchVideo] = useState('');
 
+
   const arraySize = () => {
     let size = 6;
-    if (window.innerWidth <= 900) size = 3;
-            else size = 6;
+    (window.innerWidth <= 900) ? (size = 3) : (size = 6);
       return size;
   }
 
@@ -41,8 +41,6 @@ const moreOrLess = () => {
   return label;
 }
 
-
-
   return (
     <div className="main-content">
       <div className="search-container">
@@ -60,7 +58,7 @@ const moreOrLess = () => {
             (
             <IoIosArrowUp />
             ) : (
-              <IoIosArrowDown />
+            <IoIosArrowDown />
           )}
         </IconContext.Provider>
       </p>

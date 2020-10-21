@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import play from '../images/playButton.png';
-// import PlayVideo from './play_video';
+import PlayVideo from './play_video';
 import './videos.css';
 
-function Videos( {videos, videosNo} ) {
+function Videos({ videos, videosNo }) {
   //const [videos, setVideos] = useState(videoData);
 
   // useEffect(() => {
@@ -14,8 +14,7 @@ function Videos( {videos, videosNo} ) {
   //   }, 500)
 
   // })
-
-
+  const [id, setId] = useState(null);
 
   return (
     <div>
@@ -24,7 +23,7 @@ function Videos( {videos, videosNo} ) {
         <div className="video-item" key={video.id} >
             <div className="fake-video" style={{backgroundImage: `url(${video.imgPath})`}}>
               <div>
-                <img src={play} alt="" />
+                <img src={play} alt="" onClick={() => setId(video.videoId)} />
               </div>
             </div>
             <div className="video-text">
@@ -34,6 +33,9 @@ function Videos( {videos, videosNo} ) {
           ))}
     </div>
     {!videos && <div>Loading...</div>}
+    <div className="video-player">
+      <PlayVideo id={id} />
+    </div>
     </div>
   );
 }

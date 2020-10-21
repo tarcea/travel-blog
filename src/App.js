@@ -8,12 +8,12 @@ import ToolsMenu from './components/tools_menu/tools_menu';
 // import Search from './components/search/search';
 // import Videos from './components/videos/videos';
 import Setup from './components/pages/setup/setup';
-import Subscription from './components/pages/subscription/subscription';
-import Guides from './components/pages/guides/guides';
-import Revenue from './components/pages/revenue/revenue';
-import Comunity from './components/pages/comunity/comunity';
-import Marketing from './components/pages/marketing/marketing';
-import Content from './components/pages/content/content';
+// import Subscription from './components/pages/subscription/subscription';
+// import Guides from './components/pages/guides/guides';
+// import Revenue from './components/pages/revenue/revenue';
+// import Comunity from './components/pages/comunity/comunity';
+// import Marketing from './components/pages/marketing/marketing';
+// import Content from './components/pages/content/content';
 
 
 function App() {
