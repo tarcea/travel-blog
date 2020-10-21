@@ -7,6 +7,7 @@ import "./tools_menu.css";
 function ToolsMenu({ location }) {
   const [data] = useState(dataMenu);
 
+
   const linkStyle = (d) => {
     return {
       border: location.pathname.replace("/", "") === d.path && "5px solid #f24b6a",

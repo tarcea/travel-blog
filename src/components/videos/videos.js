@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import play from '../images/playButton.png';
+// import PlayVideo from './play_video';
 import './videos.css';
 
-function Videos( {videos} ) {
+function Videos( {videos, videosNo} ) {
   //const [videos, setVideos] = useState(videoData);
 
   // useEffect(() => {
@@ -15,10 +16,11 @@ function Videos( {videos} ) {
   // })
 
 
+
   return (
     <div>
     <div className="videos-container">
-      {videos && videos.slice(0, 6).map (video => (
+      {videos && videos.slice(0, videosNo).map (video => (
         <div className="video-item" key={video.id} >
             <div className="fake-video" style={{backgroundImage: `url(${video.imgPath})`}}>
               <div>
@@ -30,7 +32,6 @@ function Videos( {videos} ) {
             </div>
           </div>
           ))}
-
     </div>
     {!videos && <div>Loading...</div>}
     </div>

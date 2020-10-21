@@ -5,8 +5,8 @@ import Footer from './components/footer/footer';
 import Menu from './components/menu/menu';
 import Banner from './components/banner/banner';
 import ToolsMenu from './components/tools_menu/tools_menu';
-import Search from './components/search/search';
-import Videos from './components/videos/videos';
+// import Search from './components/search/search';
+// import Videos from './components/videos/videos';
 import Setup from './components/pages/setup/setup';
 import Subscription from './components/pages/subscription/subscription';
 import Guides from './components/pages/guides/guides';
@@ -24,12 +24,12 @@ function App() {
         <ToolsMenu />
         <Switch>
           <Route path="/setup" component={Setup} />
-          <Route path="/subscription" component={Subscription} />
-          <Route path="/guides" component={Guides} />
-          <Route path="/revenue" component={Revenue} />
-          <Route path="/community" component={Comunity} />
-          <Route path="/marketing" component={Marketing} />
-          <Route path="/content" component={Content} />
+          <Route path="/subscription" component={Setup} />
+          <Route path="/guides" component={Setup} />
+          <Route path="/revenue" component={Setup} />
+          <Route path="/community" component={Setup} />
+          <Route path="/marketing" component={Setup} />
+          <Route path="/content" component={Setup} />
         </Switch>
       <Footer />
     </div>

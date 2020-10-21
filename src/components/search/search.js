@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { videoData } from '../../utils/data';
 import Videos from '../videos/videos';
 
 function Search() {
-  const [videos, setVideos] = useState(videoData);
+  const [videos] = useState(videoData);
   const [searchVideo, setSearchVideo] = useState('');
 
   // const editSearchVideo = (e) => {
