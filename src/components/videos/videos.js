@@ -14,7 +14,16 @@ function Videos({ videos, videosNo }) {
   //   }, 500)
 
   // })
-  const [id, setId] = useState(null);
+  // const [id, setId] = useState(null);
+  const [about, setAbout] = useState({
+      id: null,
+      played: false
+  });
+
+  const playMe = () => {
+    const frame = document.getElementById("video-frame");
+    return frame.classList.remove('video-disabled')
+  }
 
   return (
     <div>
@@ -23,7 +32,7 @@ function Videos({ videos, videosNo }) {
         <div className="video-item" key={video.id} >
             <div className="fake-video" style={{backgroundImage: `url(${video.imgPath})`}}>
               <div>
-                <img src={play} alt="" onClick={() => setId(video.videoId)} />
+                <img src={play} alt="" onClick={() => {setAbout({id: video.videoId, played: true}); playMe()} } />
               </div>
             </div>
             <div className="video-text">
@@ -33,8 +42,10 @@ function Videos({ videos, videosNo }) {
           ))}
     </div>
     {!videos && <div>Loading...</div>}
-    <div className="video-player">
-      <PlayVideo id={id} />
+    <div className="video-frame video-disabled" id="video-frame">
+      <div className="video-player">
+        <PlayVideo id={about.id} />
+      </div>
     </div>
     </div>
   );
