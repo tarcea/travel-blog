@@ -68,15 +68,40 @@
 .video-player {
   display: flex;
   justify-content: center;
+  height: 390px;
+  width: 640px;
+  margin: 0 auto;
 }
 
 .video-frame {
+  position: relative;
 
 }
 
 .video-disabled {
   display: none;
 }
+
+.gr-close {
+  font-size: 32px;
+  color: #FFFFFF;
+  /*color: #F24B6A;*/
+  /*border: 3px solid #f24b6a;*/
+  /*border-radius: 50%;*/
+  position: absolute;
+  top: 1%;
+  right: 50%;
+  cursor: pointer;
+}
+
+#video-player p {
+    visibility: hidden;
+}
+
+#video-player:hover p {
+    visibility: visible;
+}
+
 
 
 
@@ -97,9 +122,14 @@
   }
 
   .video-player {
-
+    height: 200px;
+    width: 300px;
   }
 
+  .gr-close {
+    position: absolute;
+    right: 45%;
+}
 
 }
 

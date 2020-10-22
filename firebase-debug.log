@@ -1,0 +1,64 @@
+[debug] [2020-10-22T07:58:20.370Z] ----------------------------------------------------------------------
+[debug] [2020-10-22T07:58:20.372Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2020-10-22T07:58:20.373Z] CLI Version:   8.12.1
+[debug] [2020-10-22T07:58:20.373Z] Platform:      darwin
+[debug] [2020-10-22T07:58:20.373Z] Node Version:  v12.18.2
+[debug] [2020-10-22T07:58:20.382Z] Time:          Thu Oct 22 2020 09:58:20 GMT+0200 (Central European Summer Time)
+[debug] [2020-10-22T07:58:20.383Z] ----------------------------------------------------------------------
+[debug] [2020-10-22T07:58:20.383Z] 
+[debug] [2020-10-22T07:58:20.396Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-10-22T07:58:20.397Z] > authorizing via signed-in user
+[debug] [2020-10-22T07:58:20.397Z] [iam] checking project globuzzer-travel-blog for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-10-22T07:58:20.400Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-10-22T07:58:20.401Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-10-22T07:58:20.586Z] <<< HTTP RESPONSE 200 {"date":"Thu, 22 Oct 2020 07:58:20 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T07:58:20.600Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/globuzzer-travel-blog:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-10-22T07:58:21.472Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 07:58:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=730","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T07:58:21.474Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/globuzzer-travel-blog  
+ 
+[debug] [2020-10-22T07:58:21.747Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 07:58:21 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'globuzzer-travel-blog'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-10-22T07:58:21.752Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/globuzzer-travel-blog/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-10-22T07:58:23.327Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 07:58:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[globuzzer-travel-blog]: beginning deploy... 
+[info] i  hosting[globuzzer-travel-blog]: found 39 files in build 
+[debug] [2020-10-22T07:58:24.026Z] [hosting] hash cache [YnVpbGQ] stored for 39 files
+[debug] [2020-10-22T07:58:24.026Z] [hosting][hash queue][FINAL] {"max":646,"min":49,"avg":76.87179487179488,"active":0,"complete":39,"success":39,"errored":0,"retried":0,"total":39,"elapsed":669}
+[debug] [2020-10-22T07:58:24.027Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/globuzzer-travel-blog/versions/715ac44e804679f5:populateFiles  
+ <request body omitted>
+[debug] [2020-10-22T07:58:24.749Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 22 Oct 2020 07:58:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-Q050=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-10-22T07:58:24.760Z] [hosting][populate queue][FINAL] {"max":729,"min":729,"avg":729,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":738}
+[debug] [2020-10-22T07:58:24.760Z] [hosting] uploads queued: 10
+[debug] [2020-10-22T07:58:27.206Z] [hosting][upload queue][FINAL] {"max":2454,"min":1740,"avg":1827.2,"active":0,"complete":10,"success":10,"errored":0,"retried":0,"total":10,"elapsed":2456}
+[info] ✔  hosting[globuzzer-travel-blog]: file upload complete 
+[debug] [2020-10-22T07:58:27.207Z] [hosting] deploy completed after 3878ms
+[debug] [2020-10-22T07:58:27.287Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "globuzzer-travel-blog"
+    },
+    "site": "globuzzer-travel-blog",
+    "version": "sites/globuzzer-travel-blog/versions/715ac44e804679f5"
+  }
+]
+[info] i  hosting[globuzzer-travel-blog]: finalizing version... 
+[debug] [2020-10-22T07:58:27.292Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/globuzzer-travel-blog/versions/715ac44e804679f5?updateMask=status  
+ {"status":"FINALIZED"}
