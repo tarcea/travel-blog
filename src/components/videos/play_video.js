@@ -13,14 +13,7 @@ function PlayVideo({ id })  {
       (window.innerWidth <= 900) ? ((opts.height = 200) && (opts.width = 300)) : ((opts.height = 390) && (opts.width = 640));
         return opts;
     }
-  const [opts] = useState(videoSize())
-    // const [opts] = useState({
-    //   height: '390',
-    //   width: '640',
-    //   playerVars: {
-    //     // https://developers.google.com/youtube/player_parameters
-    //     autoplay: 1,
-    //   },})
+  const [opts] = useState(videoSize());
 
     return <YouTube videoId={id} opts={opts} onReady={onReady} />;
 

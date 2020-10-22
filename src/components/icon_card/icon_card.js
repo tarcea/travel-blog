@@ -3,15 +3,15 @@ import React from 'react';
 // import { AiOutlineGlobal } from 'react-icons/ai';
 import './icon_card.css'
 
-function IconCard(props) {
+function IconCard({ className, id, img, alt, label }) {
   return (
     <div className="card-frame">
-      <div className={props.className} id={props.id}>
-        <img src={props.img} alt={props.alt} />
+      <div className={className} id={id}>
+        <img src={img} alt={alt} />
 
       </div>
       <div className="card-label">
-        <p>{props.label}</p>
+        <p>{label}</p>
       </div>
     </div>
   );

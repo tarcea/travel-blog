@@ -53,12 +53,9 @@ const moreOrLess = () => {
       <p>
         {moreOrLess()}
         <IconContext.Provider value={{ className: "arrow-down" }}>
-          {moreOrLess().includes("less") ?
-            (
-            <IoIosArrowUp />
-            ) : (
-            <IoIosArrowDown />
-          )}
+          {moreOrLess().includes("less") ? (<IoIosArrowUp />)
+                                        : (<IoIosArrowDown />)
+          }
         </IconContext.Provider>
       </p>
       <p>

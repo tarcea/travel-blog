@@ -95,11 +95,11 @@
 }
 
 #video-player p {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 #video-player:hover p {
-    visibility: visible;
+  visibility: visible;
 }
 
 

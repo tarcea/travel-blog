@@ -14,6 +14,7 @@ function ToolsMenu({ location }) {
       borderRadius: location.pathname.replace("/", "") === d.path && "15px"
     };
   };
+
   return (
     <div className="tools-menu" id="tools-link">
       {data.map((d) => (

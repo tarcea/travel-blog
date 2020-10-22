@@ -6,21 +6,12 @@ import PlayVideo from './play_video';
 import './videos.css';
 
 function Videos({ videos, videosNo }) {
-  //const [videos, setVideos] = useState(videoData);
 
-  // useEffect(() => {
-  //   setTimeout( async () => {
-  //     // const res = await fetch('https://jsonplaceholder.typicode.com/photos');
-  //     // const data = await res.json();
-  //     setVideos(videoData);
-  //   }, 500)
-
-  // })
-  // const [id, setId] = useState(null);
   const initialState = {
       id: null,
       play: false
   };
+
   const [about, setAbout] = useState(initialState);
 
   const playMe = () => {
@@ -52,15 +43,14 @@ function Videos({ videos, videosNo }) {
     </div>
     {!videos && <div>Loading...</div>}
     <div className="video-frame video-disabled" id="video-frame">
-
-      <div className="video-player" id="video-player">
-      <p onClick={closeMe}>
-        <IconContext.Provider value={{ className: "gr-close" }}>
-          <AiOutlineCloseCircle />
-        </IconContext.Provider>
-      </p>
-        <PlayVideo id={about.id}  />
-      </div>
+        <div className="video-player" id="video-player">
+        <p onClick={closeMe}>
+          <IconContext.Provider value={{ className: "gr-close" }}>
+            <AiOutlineCloseCircle />
+          </IconContext.Provider>
+        </p>
+          <PlayVideo id={about.id}  />
+        </div>
     </div>
     </div>
   );
