@@ -9,6 +9,7 @@
   width: 100vw;
   height: 402.38px;
   display:table;
+  margin-bottom: 60px;
 }
 
 .banner-welcome {
@@ -31,8 +32,8 @@
 
 @media screen and (max-width: 900px) {
 
-.banner-welcome {
-  /*font-size: 24px;*/
+.banner {
+  margin-bottom: 60px;
 }
 
 
