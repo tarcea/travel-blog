@@ -59,6 +59,7 @@
 
 @media screen and (max-width: 900px) {
   .card-frame {
+    /*transform: scale(.7);*/
+  }
 
-  }
-  }
+}

@@ -3,7 +3,7 @@ import { IconContext } from "react-icons";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 import play from '../images/playButton.png';
 import PlayVideo from './play_video';
-import './videos.css';
+import './vid.css';
 
 function Vid({ videos, videosNo }) {
 
@@ -27,7 +27,7 @@ function Vid({ videos, videosNo }) {
 
   return (
     <div>
-    <div className="videos-container">
+    <div className="videos-row-container">
       {videos && videos.slice(0, videosNo).map (video => (
         <div>
         <div className="video-item" key={video.id} >

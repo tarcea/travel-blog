@@ -3,6 +3,7 @@ import { IconContext } from "react-icons";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import './setup.css';
 import Videos from '../../videos/videos';
+// import Vid from '../../videos/vid';
 import { videoData } from '../../../utils/data';
 
 

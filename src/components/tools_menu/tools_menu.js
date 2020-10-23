@@ -10,7 +10,7 @@ function ToolsMenu({ location }) {
 
   const linkStyle = (d) => {
     return {
-      border: location.pathname.replace("/", "") === d.path && "5px solid #f24b6a",
+      border: location.pathname.replace("/", "") === d.path && "3px solid #f24b6a",
       borderRadius: location.pathname.replace("/", "") === d.path && "15px"
     };
   };
