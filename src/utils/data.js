@@ -91,7 +91,7 @@ export const videoData = [
 
   {
     id: 9,
-    title: "Content writing for Stockhol",
+    title: "Content writing for Stockholm",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -102,7 +102,7 @@ export const videoData = [
 
   {
     id: 10,
-    title: "Helsinki design district",
+    title: "Helsinki design district Stockholm",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -113,7 +113,7 @@ export const videoData = [
 
   {
     id: 11,
-    title: "Helsinki design district",
+    title: "Paris design district",
     name: "sofia",
     likes: 15000,
     liked: false,
@@ -122,26 +122,26 @@ export const videoData = [
     videoId: "paul4VqkAfU",
   },
 
-  // {
-  //   id: 12,
-  //   title: "Helsinki design district",
-  //   name: "sofia",
-  //   likes: 15000,
-  //   liked: false,
-  //   imgPath: other1,
-  //   userImg,
-  //   videoId: "nC5A7IK7ws8",
-  // },
-  // {
-  //   id: 13,
-  //   title: "Helsinki design district",
-  //   name: "sofia",
-  //   likes: 15000,
-  //   liked: false,
-  //   imgPath: other1,
-  //   userImg,
-  //   videoId: "nC5A7IK7ws8",
-  // },
+  {
+    id: 12,
+    title: "Stockholm's design district",
+    name: "sofia",
+    likes: 15000,
+    liked: false,
+    imgPath: other1,
+    userImg,
+    videoId: "nC5A7IK7ws8",
+  },
+  {
+    id: 13,
+    title: "Helsinki design district",
+    name: "sofia",
+    likes: 15000,
+    liked: false,
+    imgPath: other1,
+    userImg,
+    videoId: "nC5A7IK7ws8",
+  },
   // {
   //   id: 14,
   //   title: "Helsinki design district",

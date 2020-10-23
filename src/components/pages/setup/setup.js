@@ -19,6 +19,7 @@ function Setup() {
 
   const [videosNo, setVideosNo] = useState(arraySize());
 
+
   const mySearch = () => {
     return videos.filter(video => video
       .title.toLowerCase()
@@ -35,10 +36,13 @@ function Setup() {
   }
 
 const moreOrLess = () => {
-  let label = " View more";
-  if (videosNo >= videos.length) label = "View less";
+  let label = "View more";
+  if (videosNo >= videos.length) {
+    label = "View less";
+  }
   return label;
 }
+
 
   return (
     <div className="main-content">
@@ -49,7 +53,8 @@ const moreOrLess = () => {
              onChange={ (e) => setSearchVideo(e.target.value)} />
       </div>
       <Videos videos={mySearch()} videosNo={videosNo} />
-      <div className="more-videos" onClick={moreVideos}>
+    {mySearch().length >= arraySize() && (
+        <div className="more-videos" onClick={moreVideos}>
       <p>
         {moreOrLess()}
         <IconContext.Provider value={{ className: "arrow-down" }}>
@@ -64,6 +69,11 @@ const moreOrLess = () => {
         </IconContext.Provider>
       </p>
     </div>
+      )}
+    {mySearch().length === 0 && (
+      <h2 className="nothing-found">Nothing Found</h2>
+      )
+    }
     </div>
   );
 }
