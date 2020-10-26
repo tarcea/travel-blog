@@ -5,7 +5,7 @@ import play from '../images/playButton.png';
 import PlayVideo from './play_video';
 import './videos.css';
 
-function Vid({ videos, videosNo }) {
+function Videos({ videos, videosNo }) {
 
   const initialState = {
       id: null,
@@ -26,12 +26,12 @@ function Vid({ videos, videosNo }) {
   }
 
   return (
-    <div>
+
     <div className="videos-container">
       {videos && videos.slice(0, videosNo).map (video => (
-        <div>
-        <div className="video-item" key={video.id} >
-          <div className="fake-video" style={{backgroundImage: `url(${video.imgPath})`}}>
+        <div key={video.id}>
+        <div className="video-item"  >
+          <div className="fake-video" style={{backgroundImage: `url(${video.imgPath})`, backgroundSize: "cover"}}>
             <div>
               <img src={play} alt="" onClick={() => {setAbout({id: video.videoId, play: true}); playMe()} } />
             </div>
@@ -40,25 +40,22 @@ function Vid({ videos, videosNo }) {
               <p>{video.title}</p>
           </div>
         </div>
-
-          <div className="video-frame video-disabled" id="video-frame">
-                <div className="video-player" id="video-player">
-                <p onClick={closeMe}>
-                  <IconContext.Provider value={{ className: "gr-close" }}>
-                    <AiOutlineCloseCircle />
-                  </IconContext.Provider>
-                </p>
-                  <PlayVideo id={about.id}  />
-                </div>
-            </div>
         </div>
           ))}
 
-    </div>
     {!videos && <div>Loading...</div>}
-
+      <div className="video-frame video-disabled" id="video-frame">
+        <div className="video-player" id="video-player">
+          <p onClick={closeMe}>
+            <IconContext.Provider value={{ className: "gr-close" }}>
+              <AiOutlineCloseCircle />
+            </IconContext.Provider>
+          </p>
+            <PlayVideo id={about.id}  />
+        </div>
+      </div>
     </div>
   );
 }
 
-export default Vid;
+export default Videos;
