@@ -120,9 +120,14 @@
     grid-template-columns: 1fr;
   }*/
 
-  .fake-video {
+  .video-item {
     width: 320px;
     height: 200px;
+    margin: 0 auto;
+  }
+
+  .fake-video {
+
   }
 
   .video-text {
